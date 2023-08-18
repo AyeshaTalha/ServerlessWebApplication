@@ -41,21 +41,37 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/He6z40O.png" height="80%" width="80%">
 <br />
 
-4. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
+3. On the AWS Console, navigate to AWS Amplify and click on New App. Here, just click on Deploy Without Git Provider, Enter a name for the App and Environment name and Choose and upload the Zip file.
+<p align="center">
+<img src="https://imgur.com/XqZrgem.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/4GSgo4a.png" height="80%" width="80%">
+<br />
 
-5. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
 
-6. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
 
-7. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
 
-8. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
 
-9. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
 
-10. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
 
-11. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
+
+
+5. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
+
+6. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
+
+7. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
+
+8. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
+
+9. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
+
+10. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
+
+11. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
+
+12. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
 <h2>Benefits of AWS WordPress Website:</h2>
 
 1. Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
