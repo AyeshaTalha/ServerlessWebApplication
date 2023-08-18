@@ -20,23 +20,42 @@ This project is a web application that is built using serverless architecture on
 8. AWS Route 53: Route 53 is a scalable and highly available domain name system (DNS) service provided by AWS. It is used to route incoming requests to the web application's API Gateway and CloudFront distribution.
 <h2>Project Workflow:</h2>
 
-1. Design the architecture: Define the components and services required for the web application, including API Gateway, Lambda functions, DynamoDB tables, S3 buckets, and Cognito user pools.
+1. Design the architecture: Define the components and services required for the web application, including API Gateway, Lambda functions, DynamoDB tables, S3 buckets, and IAM.
+<p align="center">
+Serverless Architecture: <br/>
+<p align="center">
+<img src="https://imgur.com/Je2E7Ju.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/R4cMuGd.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/qebd2lc.png" height="80%" width="80%">
+<br />
 
-2. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
+2. To host our Website, we will choose Amplify. With Amplify, we can build and host websites. For our purpose, since our website is very simple we will create an html file in a text editor on our local machine and just use Amplify to deploy and host that webpage. The code for this is given above in the INDEX.HTML ORIGINAL file. Just copy and Paste this code in your file. Once you have created this file, Zip it by just right clicking on the file and selecting compress. 
+<p align="center">
+<img src="https://imgur.com/aVIMe8P.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/OpOiGDB.png" height="80%" width="80%">
+<br />
 
-3. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
+4. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
 
-4. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
+5. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
 
-5. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
+6. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
 
-6. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
+7. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
 
-7. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
+8. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
 
-8. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
+9. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
 
-9. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
+10. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
+
+11. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
 <h2>Benefits of AWS WordPress Website:</h2>
 
 1. Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
