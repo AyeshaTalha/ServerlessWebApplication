@@ -48,6 +48,11 @@ Serverless Architecture: <br/>
 <p align="center">
 <img src="https://imgur.com/4GSgo4a.png" height="80%" width="80%">
 <br />
+<p align="center">
+<img src="https://imgur.com/ZBPB2LS.png" height="80%" width="80%">
+<br />
+
+  4. 
 
 
 
