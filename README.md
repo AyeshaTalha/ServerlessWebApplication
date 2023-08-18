@@ -52,7 +52,7 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/ZBPB2LS.png" height="80%" width="80%">
 <br />
 
-  4. 
+4. From AWS Console, navigate to AWS Lamda. Click on New function. Enter the details, scroll down to the code blovk
 
 
 
