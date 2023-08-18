@@ -38,7 +38,7 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/aVIMe8P.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/OpOiGDB.png" height="80%" width="80%">
+<img src="https://imgur.com/He6z40O.png" height="80%" width="80%">
 <br />
 
 4. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
