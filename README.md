@@ -52,7 +52,46 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/ZBPB2LS.png" height="80%" width="80%">
 <br />
 
-4. From AWS Console, navigate to AWS Lamda. Click on New function. Enter the details, scroll down to the code blovk
+4. We need to create a Lamda Function that will process our math functionality. From AWS Console, navigate to AWS Lamda. Click on New function. We are going to author this from scratch. Enter thr name of thr Function, Runtime as the latest version of Python and click on Create Function.On the main page of Lamda, scroll down to the Code block. The code for this Lamda Function is given in the LamdaFunctionOriginal file above. Just copy and paste the code. Click on Deploy and we are done.
+<p align="center">
+<img src="https://imgur.com/XnvzGhE.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/b8ejCFq.png" height="80%" width="80%">
+<br />
+
+5. Now, we need something to invoke our Math Functionality. For this, we will use API Gateway. This is a core functionality in AWS which we can use to create our own APIs. In a Serverless Architrcture, it is the perfect way to invoke our Lamda Function. From the AWS Console, navigate to API Gateway and Click on Create API. We are going to use a REST API. Give it a name and click on Create API. 
+<p align="center">
+<img src="https://imgur.com/vCsjcMa.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/2U90adI.png" height="80%" width="80%">
+<br />
+
+6. Click on the API created. On the lefthand side, click on Resources. On the righthand side, click on "/". From thr Actions menu, select Create Method. The type of method will be POST. Enter the Lamda Function name and create the POST method as shown below:
+<p align="center">
+<img src="https://imgur.com/YTPA3rb.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/8a0masw.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/srGDfkU.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/srGDfkU.png" height="80%" width="80%">
+<br />
+
+7. Next, we must Enable CORS (Cross Origin Resourse Sharing) so that our website can interact with the lamda function. To do so, click on the POST method and from Actions menu select Enable CORS. Click on Deploy API to deploy and enter the Deployment stage as dev.
+<p align="center">
+<img src="https://imgur.com/SItVLAs.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/jXU9YV6.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/izfqvWx.png" height="80%" width="80%">
+<br />
 
 
 
@@ -62,21 +101,25 @@ Serverless Architecture: <br/>
 
 
 
-5. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
 
-6. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
 
-7. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
 
-8. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
 
-9. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
+6. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
 
-10. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
+7. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
 
-11. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
+8. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
 
-12. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
+9. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
+
+10. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
+
+11. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
+
+12. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
+
+13. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
 <h2>Benefits of AWS WordPress Website:</h2>
 
 1. Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
