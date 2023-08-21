@@ -82,7 +82,7 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/srGDfkU.png" height="80%" width="80%">
 <br />
 
-7. Next, we must Enable CORS (Cross Origin Resourse Sharing) so that our website can interact with the lamda function. To do so, click on the POST method and from Actions menu select Enable CORS. Click on Deploy API to deploy and enter the Deployment stage as dev.
+7. Next, we must Enable CORS (Cross Origin Resourse Sharing) so that our website can interact with the lamda function. To do so, click on the POST method and from Actions menu select Enable CORS. Click on Deploy API to deploy and enter the Deployment stage as dev. Copy the Invoke URL and keep it handy. We will be using it later.
 <p align="center">
 <img src="https://imgur.com/SItVLAs.png" height="80%" width="80%">
 <br />
@@ -92,7 +92,38 @@ Serverless Architecture: <br/>
 <p align="center">
 <img src="https://imgur.com/izfqvWx.png" height="80%" width="80%">
 <br />
+<p align="center">
+<img src="https://imgur.com/rebURyF.png" height="80%" width="80%">
+<br />
 
+8. Now we need to setup a database to store the results. We will use DynamoDB for this. Navigate to DynamoDB and Click on Create Table. Enter the name and create table. Copy the ARN of this table.
+<p align="center">
+<img src="https://imgur.com/WKxFXsx.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/MZlcvLu.png" height="80%" width="80%">
+<br />
+
+9. Next, we have to give our Lamda Function the permission to write results to the DynamoDB table. Navigate back to the our Lamda Function and Scroll down to the Configuration section. Click on the execution role and select add inline policy. Name the policy and click on JSON. The code for this policy is given above in the ExecutionRolePolicyJSON file. Copy and paste the code and create the policy. Make sure you enter the ARN of the Table you created in the poilcy. 
+<p align="center">
+<img src="https://imgur.com/umJTohY.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/0nZ52xE.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/X0lQ9zG.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/i9fiX9S.png" height="80%" width="80%">
+<br />
+
+10. Navigate to the Code tab of the Lamda Function. We need to make some changes to our code so that the Lamda Function can write the results to the table. It wasn't doing that before. The updated code is given above in the LamdaFunctionFinal file. Copy and paste the code and click on Delopy.
+<p align="center">
+<img src="https://imgur.com/YsAMw1C.png" height="80%" width="80%">
+<br />
+
+11. We must update our Index.html file in order to invoke the API from our website. Copy the code from Index.html file above and paste it in your file. Compress the file and add it to our Amplify website.
 
 
 
