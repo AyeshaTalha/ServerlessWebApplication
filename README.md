@@ -124,6 +124,12 @@ Serverless Architecture: <br/>
 <br />
 
 11. We must update our Index.html file in order to invoke the API from our website. Copy the code from Index.html file above and paste it in your file. Compress the file and add it to our Amplify website.
+<p align="center">
+<img src="https://imgur.com/itA0zVR.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/K3urd8N.png" height="80%" width="80%">
+<br />
 
 
 
