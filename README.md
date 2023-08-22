@@ -1,6 +1,7 @@
 # ServerlessWebApplication
 <h2>Description:</h2>
-This project is a web application that is built using serverless architecture on the Amazon Web Services (AWS) platform. The goal of this project is to leverage AWS services to create a scalable, cost-effective, and highly available web application without the need for managing traditional servers.
+This project is a web application that is built using serverless architecture on the Amazon Web Services (AWS) platform. The goal of this project is to leverage AWS services to create a scalable, cost-effective, and highly available web application without the need for managing traditional servers. We are going to build a web app the will give us the result of Base to the power of Exponent.
+
 <h2> Key Components and Services used:</h2>
 
 1. AWS Lambda: AWS Lambda is used to run the application's backend code in a serverless manner. It allows you to execute code in response to events, such as HTTP requests or database updates.
