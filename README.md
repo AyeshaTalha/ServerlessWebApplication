@@ -123,7 +123,7 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/YsAMw1C.png" height="80%" width="80%">
 <br />
 
-11. We must update our Index.html file in order to invoke the API from our website. Copy the code from Index.html file above and paste it in your file. Compress the file and add it to our Amplify website.
+11. We must update our Index.html file in order to invoke the API from our website. Copy the code from Index.html file above and paste it in your file. Make sure you add your API gateway endpoint.   Compress the file and add it to our Amplify website.
 <p align="center">
 <img src="https://imgur.com/itA0zVR.png" height="80%" width="80%">
 <br />
@@ -131,6 +131,13 @@ Serverless Architecture: <br/>
 <img src="https://imgur.com/K3urd8N.png" height="80%" width="80%">
 <br />
 
+12. Click on the URL of the website and there it is. Enter a Base number and an exponent number and hit Calculate. It will give the result.
+<p align="center">
+<img src="https://imgur.com/XDJm1gT.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/1tqGACw.png" height="80%" width="80%">
+<br />
 
 
 
