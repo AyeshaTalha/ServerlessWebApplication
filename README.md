@@ -11,13 +11,8 @@ This project is a web application that is built using serverless architecture on
 
 4. Amazon DynamoDB: DynamoDB is a NoSQL database service provided by AWS. It is used to store and retrieve data for the web application. DynamoDB offers scalability, low latency, and automatic scaling.
 
-5. Amazon Cognito: Cognito is used for user authentication and authorization. It provides a secure way to manage user sign-up, sign-in, and access control for the web application.
+5. AWS IAM : AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. With IAM, you can centrally manage permissions that control which AWS resources users can access. You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
 
-6. AWS CloudFormation: CloudFormation is used for infrastructure as code. It allows you to define and provision AWS resources in a declarative manner, making it easier to manage and deploy the application infrastructure.
-
-7. AWS CloudFront: CloudFront is a content delivery network (CDN) service provided by AWS. It is used to distribute the web application's static assets globally, reducing latency and improving performance.
-
-8. AWS Route 53: Route 53 is a scalable and highly available domain name system (DNS) service provided by AWS. It is used to route incoming requests to the web application's API Gateway and CloudFront distribution.
 <h2>Project Workflow:</h2>
 
 1. Design the architecture: Define the components and services required for the web application, including API Gateway, Lambda functions, DynamoDB tables, S3 buckets, and IAM.
@@ -106,10 +101,10 @@ Serverless Architecture: <br/>
 
 9. Next, we have to give our Lamda Function the permission to write results to the DynamoDB table. Navigate back to the our Lamda Function and Scroll down to the Configuration section. Click on the execution role and select add inline policy. Name the policy and click on JSON. The code for this policy is given above in the ExecutionRolePolicyJSON file. Copy and paste the code and create the policy. Make sure you enter the ARN of the Table you created in the poilcy. 
 <p align="center">
-<img src="https://imgur.com/umJTohY.png" height="80%" width="80%">
+<img src="https://imgur.com/My4oAHR.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/0nZ52xE.png" height="80%" width="80%">
+<img src="https://imgur.com/yYlLunx.png" height="80%" width="80%">
 <br />
 <p align="center">
 <img src="https://imgur.com/X0lQ9zG.png" height="80%" width="80%">
@@ -140,30 +135,6 @@ Serverless Architecture: <br/>
 <br />
 
 
-
-
-
-
-
-
-
-
-
-6. Develop Lambda functions: Write the backend code for the web application's functionality using programming languages supported by Lambda, such as Node.js, Python, or Java.
-
-7. Create API Gateway: Configure API Gateway to define the RESTful APIs and integrate them with the appropriate Lambda functions.
-
-8. Set up DynamoDB: Create the necessary DynamoDB tables to store and retrieve data for the web application.
-
-9. Implement user authentication: Configure Cognito user pools to handle user sign-up, sign-in, and access control for the web application.
-
-10. Store static assets: Upload the web application's static assets, such as HTML, CSS, JavaScript files, and images, to S3 buckets.
-
-11. Configure CloudFront: Set up CloudFront to distribute the static assets globally and improve performance.
-
-12. Deploy the application: Use CloudFormation to define the infrastructure as code and provision the required AWS resources.
-
-13. Test and monitor: Test the web application's functionality and performance. Set up monitoring and logging using AWS CloudWatch to track and analyze application metrics.
 <h2>Benefits of AWS WordPress Website:</h2>
 
 1. Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
